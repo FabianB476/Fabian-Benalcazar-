@@ -1,0 +1,97 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bag">
+
+    <TextView
+        android:id="@+id/tvPuntosJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="80dp"
+        android:text="Jugador: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPuntosMaquina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="80dp"
+        android:textColor="#FFFFFF"
+        android:text="Máquina: 0" />
+
+    <TextView
+        android:id="@+id/tvContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430dp"
+        android:textColor="#FFFFFF"
+        android:text="" />
+
+    <!-- Botones de juego -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvResultado"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="66dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnPiedra"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:src="@drawable/piedra" />
+
+        <ImageButton
+            android:id="@+id/btnPapel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:src="@drawable/papel" />
+
+        <ImageButton
+            android:id="@+id/btnTijera"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:src="@drawable/tijera" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivRespuestaMaquina"
+        android:layout_width="190dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="260dp"
+        android:contentDescription="Respuesta de la máquina"
+        android:scaleType="centerCrop"
+        android:src="@drawable/maquina" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="490dp"
+        android:textColor="#FFFFFF"
+        android:text="" />
+
+</RelativeLayout>
